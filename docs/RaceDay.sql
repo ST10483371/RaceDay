@@ -56,4 +56,16 @@ Name VARCHAR(20) NOT NULL,
 Description VARCHAR(50) NOT NULL
 )
 
+CREATE TABLE RaceCategories(
+CategoryID int,
+RaceId int,
+
+FOREIGN KEY (CategoryID)
+REFERENCES Categories(CategoryID),
+
+FOREIGN KEY (RaceID)
+REFERENCES Races(RaceID)
+)
+
+
 
