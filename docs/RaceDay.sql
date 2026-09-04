@@ -67,5 +67,17 @@ FOREIGN KEY (RaceID)
 REFERENCES Races(RaceID)
 )
 
+CREATE TABLE Results(
+ResultID int IDENTITY(1,1) PRIMARY KEY,
+RegistrationID int,
+FinishTime VARCHAR(50),
+Position int,
+Status VARCHAR(20),
+
+FOREIGN KEY (RegistrationID)
+REFERENCES Registrations(RegistrationID)
+)
+
+
 
 
