@@ -99,6 +99,11 @@ INSERT INTO Organizers
 VALUES ('Verizon', '0114568900'),
 		('Amazon', '0113457898')
 
+INSERT INTO Races
+VALUES ('IronMan', 'Gauteng', '4:00am', '17:00pm', '50', 'Marathon' ),
+		('Soweto Champs', 'Gauteng', '4:00am', '12:00pm', '25', 'Marathon'),
+		('Walk For Cancer', 'Western Cape', '8:00am', '12:00pm', '10', 'Walk')
+
 
 
 
