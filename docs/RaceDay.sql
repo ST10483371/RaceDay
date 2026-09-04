@@ -25,6 +25,21 @@ Name VARCHAR(20) UNIQUE NOT NULL,
 Contact_Number(10) NOT NULL
 )
 
+CREATE TABLE Registrations(
+RegistrationID int IDENTITY(1,1) PRIMARY KEY,
+BibNumber int ,
+Status VARCHAR(20),
+RegistrationDate DATE,
+ParticipantID int,
+RaceID int 
+
+FOREIGN KEY (ParticipantID)
+REFERENCES Participants(ParticipantID),
+
+FOREIGN KEY(RaceID)
+REFERENCES Races(RaceID)
+)
+
 CREATE TABLE Races(
 RaceID int IDENTITY(1,1) PRIMARY KEY,
 Name VARCHAR(50) UNIQUE NOT NULL,
