@@ -94,6 +94,11 @@ REFERENCES Registrations(RegistrationID)
 INSERT INTO Participants
 VALUES ( '06/11/2004', 'Male', '0836627890', 'Red Tigers' ),
 	   ( '08/12/2005', 'Female', NULL, 'Blue dragons' )
+	
+INSERT INTO Organizers
+VALUES ('Verizon', '0114568900'),
+		('Amazon', '0113457898')
+
 
 
 
