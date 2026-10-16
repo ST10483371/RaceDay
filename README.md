@@ -15,4 +15,10 @@ performance history, and prepare for race day using live weather and route infor
 
 https://youtu.be/uChoo4DgWGA
 
+#Backend API#
+
+The ASP.NET Core Web API (.NET 9, Entity Framework Core, SQL Server, JWT authentication) lives in
+`RaceDay.API/`. Setup, configuration, endpoints and the data model are documented in
+[RaceDay.API/README.md](RaceDay.API/README.md).
+
 
