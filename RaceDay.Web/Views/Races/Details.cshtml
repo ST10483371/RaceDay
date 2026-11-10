@@ -1,0 +1,30 @@
+@model RaceDay.Web.Models.Race
+@{
+    ViewData["Title"] = Model.Name;
+    bool isOrganizer = (bool)ViewBag.IsOrganizer;
+}
+
+<h1 class="h3 mb-3">@Model.Name</h1>
+
+<dl class="row">
+    <dt class="col-sm-3">Location</dt>
+    <dd class="col-sm-9">@Model.Location</dd>
+
+    <dt class="col-sm-3">Start</dt>
+    <dd class="col-sm-9">@Model.StartTime</dd>
+
+    <dt class="col-sm-3">End</dt>
+    <dd class="col-sm-9">@Model.EndTime</dd>
+
+    <dt class="col-sm-3">Distance</dt>
+    <dd class="col-sm-9">@Model.Distance_km km</dd>
+
+    <dt class="col-sm-3">Type</dt>
+    <dd class="col-sm-9">@Model.Type</dd>
+</dl>
+
+<a class="btn btn-outline-secondary" asp-action="Index">Back to races</a>
+@if (isOrganizer)
+{
+    <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@Model.RaceID">Edit</a>
+}

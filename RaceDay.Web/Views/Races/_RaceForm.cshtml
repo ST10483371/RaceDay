@@ -1,0 +1,39 @@
+@model RaceDay.Web.Models.Race
+
+<div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+<div class="mb-3">
+    <label asp-for="Name" class="form-label"></label>
+    <input asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Location" class="form-label"></label>
+    <input asp-for="Location" class="form-control" />
+    <span asp-validation-for="Location" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="StartTime" class="form-label"></label>
+    <input asp-for="StartTime" class="form-control" placeholder="e.g. 2026-12-05 07:00" />
+    <span asp-validation-for="StartTime" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="EndTime" class="form-label"></label>
+    <input asp-for="EndTime" class="form-control" placeholder="e.g. 2026-12-05 11:00" />
+    <span asp-validation-for="EndTime" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Distance_km" class="form-label"></label>
+    <input asp-for="Distance_km" type="number" min="0" class="form-control" />
+    <span asp-validation-for="Distance_km" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label asp-for="Type" class="form-label"></label>
+    <input asp-for="Type" class="form-control" placeholder="e.g. Road running, Cycling, Walking" />
+    <span asp-validation-for="Type" class="text-danger"></span>
+</div>

@@ -1,0 +1,12 @@
+@model RaceDay.Web.Models.Race
+@{
+    ViewData["Title"] = "New race";
+}
+
+<h1 class="h3 mb-3">New race</h1>
+
+<form asp-action="Create" method="post" style="max-width: 640px;">
+    <partial name="_RaceForm" model="Model" />
+    <button type="submit" class="btn btn-primary">Create race</button>
+    <a class="btn btn-link" asp-action="Index">Cancel</a>
+</form>

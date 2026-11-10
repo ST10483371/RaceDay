@@ -1,0 +1,155 @@
+/* RaceDay sporty theme: dark race-green with orange accents. */
+:root {
+    --rd-ink: #0f1a14;
+    --rd-green: #1b5a3a;
+    --rd-orange: #ff6b1a;
+    --rd-orange-dark: #e35a0f;
+}
+
+body {
+    font-family: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #f3f5f2;
+}
+
+h1, h2, h3, .navbar-brand, .table thead th, .btn {
+    font-family: "Barlow Condensed", "Barlow", system-ui, sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(90deg, var(--rd-ink), var(--rd-green)) !important;
+    border-bottom: 3px solid var(--rd-orange);
+}
+
+.navbar-brand {
+    color: var(--rd-orange) !important;
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.navbar .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--rd-orange);
+    border-color: var(--rd-orange);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--rd-orange-dark);
+    border-color: var(--rd-orange-dark);
+    color: #fff;
+}
+
+.btn-outline-primary {
+    color: var(--rd-orange);
+    border-color: var(--rd-orange);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--rd-orange);
+    border-color: var(--rd-orange);
+}
+
+/* Login and register pages: race-track photo-style backdrop */
+.auth-page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(10, 20, 15, 0.55), rgba(10, 20, 15, 0.85)),
+        url("/images/sport-bg.svg") center / cover no-repeat;
+    background-color: var(--rd-ink);
+}
+
+.auth-page .navbar {
+    background: rgba(15, 26, 20, 0.9) !important;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 0.75rem;
+    border-top: 4px solid var(--rd-orange);
+    padding: 2rem;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+}
+
+.auth-card h1 {
+    color: var(--rd-ink);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.auth-page .text-center a {
+    color: var(--rd-green);
+    font-weight: 600;
+}
+
+/* Races page hero band */
+.race-hero {
+    background:
+        linear-gradient(90deg, rgba(10, 20, 15, 0.92), rgba(10, 20, 15, 0.55)),
+        url("/images/sport-bg.svg") center / cover no-repeat;
+    background-color: var(--rd-ink);
+    color: #fff;
+    border-radius: 0.75rem;
+    padding: 2.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid var(--rd-orange);
+}
+
+.race-hero h1 {
+    color: #fff;
+    margin: 0;
+    font-size: clamp(2.2rem, 6vw, 3.4rem);
+    font-weight: 800;
+}
+
+.race-hero p {
+    color: #d6e4dc;
+    margin: 0.25rem 0 0;
+}
+
+/* Race table */
+.table-sport thead th {
+    background: var(--rd-ink);
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.95rem;
+}
+
+.table-sport tbody tr:hover {
+    background: rgba(255, 107, 26, 0.08);
+}
+
+.distance-pill {
+    display: inline-block;
+    background: var(--rd-orange);
+    color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    border-radius: 999px;
+    padding: 0.05rem 0.6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
